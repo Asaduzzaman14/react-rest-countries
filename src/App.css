@@ -37,16 +37,3 @@
   }
 }
 
-.Person{
-  border: 2px solid #ff0e0e;
-  border-radius: 20px;
-  background-color: #1973228d;
-  margin-bottom:20px;
-}
-
-.Friend{
-  border: 2px solid #7c1eab;
-  border-radius: 20px;
-  background-color: #98248f8d;
-  margin-bottom:20px;
-}
