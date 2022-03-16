@@ -5,6 +5,7 @@ function App() {
   return (
     <div>
       <LoadCountries></LoadCountries>
+      <h2>hello</h2>
     </div>
   )
 }
@@ -22,10 +23,19 @@ function LoadCountries() {
     <div>
       <h1>vesiting every country of the world</h1>
       <h3>All contries:{countries.length}</h3>
+      {
+        countries.map(country => <Country name={country.name.common} population={country.population}></Country>)
+      }
     </div>
   )
-
-
+}
+function Country(props) {
+  return (
+    <div>
+      <h3>name: {props.name}</h3>
+      <p>population : {props.population}</p>
+    </div>
+  )
 }
 
 
