@@ -4,8 +4,9 @@ import './App.css';
 function App() {
   return (
     <div>
+      {/* <Countries></Countries> */}
       <LoadCountries></LoadCountries>
-      <h2>hello</h2>
+
     </div>
   )
 }
