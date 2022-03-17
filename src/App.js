@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react';
 import './App.css';
+import Countries from './compononts/Country/Countries';
 
 function App() {
   return (
     <div>
+      <Countries></Countries>
       {/* <Countries></Countries> */}
-      <LoadCountries></LoadCountries>
+      {/* <LoadCountries></LoadCountries> */}
 
     </div>
   )
