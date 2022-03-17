@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Country from '../countryy/Country';
+import Footer from '../footer/Footer';
+import Header from '../header/Header';
 import './countries.css'
 
 const Countries = () => {
@@ -14,12 +16,15 @@ const Countries = () => {
 
     return (
         <div>
-            <h1 className='heading'>Total Countries:{countries.length}</h1>
+            <Header></Header>
+            <h2 className='heading'>Total Countries:{countries.length}</h2>
             <div className='country-container'>{countries.map(country =>
+
                 <Country country={country}
                     key={country.cca3}
                 ></Country>
             )}</div>
+            <Footer></Footer>
         </div>
     );
 };
